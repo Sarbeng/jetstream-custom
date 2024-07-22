@@ -56,7 +56,7 @@
                     
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none p-2 rounded hover:text-gray-950"><i class="bi bi-person-gear mr-2"></i> {{ __('Management') }}</x-nav-link>
-                        <ul class="submenu hidden">
+                        <ul class="submenu hidden ml-2">
                             <li class="py-2 text-sm"><x-nav-link href=""><i class="fa-regular fa-calendar mr-2"></i> {{ __('Create Schedule') }}</x-nav-link></li>
                             <li class="py-2 text-sm"><a href="">View</a></li>
                             <li class="py-2 text-sm"><a href="">Edit</a></li>
@@ -72,7 +72,7 @@
                     
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-person-up mr-2"></i> Employee Management</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Add Employee</a></li>
                             <li class="py-2 text-sm"><a href="">Edit Employee</a></li>
                             <li class="py-2 text-sm"><a href="">Remove Employee</a></li>
@@ -85,7 +85,7 @@
 
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-columns-gap mr-2"></i> Patterns</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Patterns</a></li>
                             <li class="py-2 text-sm"><a href="">Patterns</a></li>
                             <li class="py-2 text-sm"><a href="">SPatterns</a></li>
@@ -96,7 +96,7 @@
 
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-person-workspace mr-2"></i> Leave Management</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Request Leave</a></li>
                             <li class="py-2 text-sm"><a href="">Approve Leave</a></li>
                             <li class="py-2 text-sm"><a href="">Track Leave</a></li>
@@ -107,7 +107,7 @@
 
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-bell mr-2"></i>Notifications</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Configure Email Notifications</a></li>
                             <li class="py-2 text-sm"><a href="">Configure SMS Notifications</a></li>
                             <li class="py-2 text-sm"><a href="">Configure App Notifications</a></li>
@@ -117,7 +117,7 @@
 
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none"> <i class="bi bi-file-earmark-spreadsheet mr-2"></i>Reports</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Generate Reports</a></li>
                             <li class="py-2 text-sm"><a href="">View Reports</a></li>
                             <li class="py-2 text-sm"><a href="">Schedule Reports</a></li>
@@ -127,7 +127,7 @@
 
                     <li class="py-2 text-sm">
                         <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none"><i class="bi bi-gear mr-2"></i>Settings</x-nav-link>
-                        <ul class="hidden">
+                        <ul class="hidden ml-4">
                             <li class="py-2 text-sm"><a href="">Configure Working Hours</a></li>
                             <li class="py-2 text-sm"><a href="">Set Holidays</a></li>
                             <li class="py-2 text-sm"><a href="">Set Rules</a></li>
