@@ -10,7 +10,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+    <!-- Link to bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -49,14 +50,14 @@
                 <ul class="p-3 py-2 max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
                     <li class="py-2 text-sm">
                         <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        <i></i><i class="bi bi-speedometer2 mr-2"></i> {{ __('Dashboard') }}
                         </x-nav-link>
                     </li>
                     
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none p-2 rounded hover:text-gray-950">{{ __('Management') }}</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none p-2 rounded hover:text-gray-950"><i class="bi bi-person-gear mr-2"></i> {{ __('Management') }}</x-nav-link>
                         <ul class="submenu hidden">
-                            <li class="py-2 text-sm"><x-nav-link href="">{{ __('Create Schedule') }}</x-nav-link></li>
+                            <li class="py-2 text-sm"><x-nav-link href=""><i class="fa-regular fa-calendar mr-2"></i> {{ __('Create Schedule') }}</x-nav-link></li>
                             <li class="py-2 text-sm"><a href="">View</a></li>
                             <li class="py-2 text-sm"><a href="">Edit</a></li>
                             <li class="py-2 text-sm"><a href="">Delete</a></li>
@@ -70,7 +71,7 @@
                     </li>
                     
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950">Employee Management</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-person-up mr-2"></i> Employee Management</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Add Employee</a></li>
                             <li class="py-2 text-sm"><a href="">Edit Employee</a></li>
@@ -83,7 +84,7 @@
                     </li>
 
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950">Patterns</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-columns-gap mr-2"></i> Patterns</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Patterns</a></li>
                             <li class="py-2 text-sm"><a href="">Patterns</a></li>
@@ -94,7 +95,7 @@
                     </li>
 
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950">Leave Management</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-person-workspace mr-2"></i> Leave Management</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Request Leave</a></li>
                             <li class="py-2 text-sm"><a href="">Approve Leave</a></li>
@@ -105,7 +106,7 @@
                     </li>
 
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950">Notifications</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 border-none hover:text-gray-950"><i class="bi bi-bell mr-2"></i>Notifications</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Configure Email Notifications</a></li>
                             <li class="py-2 text-sm"><a href="">Configure SMS Notifications</a></li>
@@ -115,7 +116,7 @@
                     </li>
 
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none">Reports</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none"> <i class="bi bi-file-earmark-spreadsheet mr-2"></i>Reports</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Generate Reports</a></li>
                             <li class="py-2 text-sm"><a href="">View Reports</a></li>
@@ -125,7 +126,7 @@
                     </li>
 
                     <li class="py-2 text-sm">
-                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none">Settings</x-nav-link>
+                        <x-nav-link href="javascript:void(0)" onclick="toggleSubmenu(this)" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none"><i class="bi bi-gear mr-2"></i>Settings</x-nav-link>
                         <ul class="hidden">
                             <li class="py-2 text-sm"><a href="">Configure Working Hours</a></li>
                             <li class="py-2 text-sm"><a href="">Set Holidays</a></li>
@@ -138,11 +139,13 @@
                     <li class="py-2 text-sm">
                        
                         <x-nav-link href="" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none">
+                        <i class="bi bi-person mr-2"></i>
                         User Profile
                         </x-nav-link>
                 </li>
                     
                     <x-nav-link href="" class="w-full p-2 rounded hover:bg-primary-400 hover:text-gray-950 border-none">
+                    <i class="bi bi-info-circle mr-2"></i>
                     Help/Support
                         </x-nav-link>
                 </ul>
